@@ -1,0 +1,160 @@
+/* RESET BASIQUE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f0f4ff, #e0e7ff);
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: #2563eb; /* bleu pro */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #facc15; /* jaune doré pour survol */
+}
+
+/* ===== CONTENEUR PRINCIPAL ===== */
+.container {
+    max-width: 650px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* ===== TITRES ===== */
+h1, h2, h3 {
+    text-align: center;
+    color: #1e40af;
+    margin-bottom: 20px;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+
+/* ===== FORMULAIRES ===== */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, select {
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* ===== BOUTONS ===== */
+button {
+    margin-top: 20px;
+    padding: 14px 0;
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+
+/* ===== PARAGRAPHES LIENS ===== */
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+p a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #1e40af;
+}
+
+/* ===== TRAJETS ===== */
+.trajet {
+    background: linear-gradient(120deg, #e0e7ff, #f0f4ff);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.trajet:hover {
+    background: linear-gradient(120deg, #dbeafe, #e0f2fe);
+    transform: translateY(-2px);
+}
+
+/* ===== INPUT RECHERCHE ===== */
+#searchDepart {
+    width: calc(100% - 120px);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 16px;
+}
+
+button[onclick="rechercherTrajet()"] {
+    width: 100px;
+    margin-left: 10px;
+}
+
+/* ===== CARTE ===== */
+#map {
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 700px){
+    nav a { display: block; margin: 10px 0; }
+    #searchDepart { width: 100%; margin-bottom: 10px; }
+    button[onclick="rechercherTrajet()"] { width: 100%; margin-left: 0; }
+}

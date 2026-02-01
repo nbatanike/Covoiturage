@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Publier un trajet – Covoiturage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="inscription.html">Inscription</a>
+    <a href="connexion.html">Connexion</a>
+    <a href="publier-trajet.html">Publier un trajet</a>
+    <a href="rechercher.html">Rechercher</a>
+</nav>
+
+<div class="container">
+    <h2>Publier un trajet</h2>
+    <div id="alerteConnexion" style="color:red; margin-bottom:10px;"></div>
+
+    <form id="formTrajet">
+        <label for="depart">Ville de départ</label>
+        <input type="text" id="depart" placeholder="Ex: Lomé" required>
+
+        <label for="arrivee">Ville d'arrivée</label>
+        <input type="text" id="arrivee" placeholder="Ex: Kara" required>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" required>
+
+        <label for="prix">Prix (FCFA)</label>
+        <input type="number" id="prix" placeholder="Ex: 1500" required>
+
+        <button type="submit">Publier</button>
+    </form>
+
+    <h3 style="margin-top:20px;">Mes trajets publiés</h3>
+    <div id="mesTrajets"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

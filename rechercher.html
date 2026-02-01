@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Rechercher un trajet – Covoiturage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="inscription.html">Inscription</a>
+    <a href="connexion.html">Connexion</a>
+    <a href="publier-trajet.html">Publier un trajet</a>
+    <a href="rechercher.html">Rechercher</a>
+</nav>
+
+<div class="container">
+    <h2>Rechercher un trajet</h2>
+
+    <input type="text" id="searchDepart" placeholder="Ville de départ">
+    <button onclick="rechercherTrajet()">Rechercher</button>
+
+    <div id="resultats"></div>
+
+    <h3 style="margin-top:20px;">Carte du trajet</h3>
+    <div id="map" style="height:400px;width:100%;border-radius:8px;"></div>
+</div>
+
+<!-- GOOGLE MAPS API -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=TA_CLE_API&callback=initMap"
+  async defer>
+</script>
+<script src="app.js"></script>
+</body>
+</html>
