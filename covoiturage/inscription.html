@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription – Covoiturage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="inscription.html">Inscription</a>
+    <a href="connexion.html">Connexion</a>
+    <a href="publier-trajet.html">Publier un trajet</a>
+    <a href="rechercher.html">Rechercher</a>
+</nav>
+
+<div class="container">
+    <h2>Créer un compte</h2>
+    <form id="formInscription">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" placeholder="Ex: Koffi Mensah" required>
+
+        <label for="telephone">Téléphone</label>
+        <input type="text" id="telephone" placeholder="Ex: 90000000" required>
+
+        <label for="motdepasse">Mot de passe</label>
+        <input type="password" id="motdepasse" placeholder="Mot de passe" required>
+
+        <button type="submit">Créer mon compte</button>
+    </form>
+
+    <p>Déjà inscrit ? <a href="connexion.html">Se connecter</a></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
